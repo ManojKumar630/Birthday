@@ -1,0 +1,89 @@
+
+/* Centered Text Box */
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2); /* Transparent White Box */
+    padding: 20px;
+    border-radius: 10px;
+    border-color: rgb(234, 9, 9);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+p {
+    font-size: 24px;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide Elements Initially */
+.hidden {
+    display: none;
+}
+
+/* Input Field */
+
+#dobInput {
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    width: 80%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+/* Button */
+#proceedBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fullscreen Video */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Behind everything */
+}
+
+/* Centered Text Box */
+#textContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2); /* Transparent White Box */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Animated Text */
+#text1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

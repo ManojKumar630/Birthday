@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'NetflixFont';
+    src: url('../assets/fonts/BebasNeue.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: red;
+    font-family: 'NetflixFont', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Wrap the text for smooth animation */
+#logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    transition: transform 4s ease-in-out, opacity 4s ease-in-out;
+}
+
+/* SVG container */
+svg {
+    width: 90%;
+    height: auto;
+}
+
+/* Logo Text Styling */
+.logo {
+    font-size: 3.5rem; /* Adjust font size */
+    fill: red;
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
+}
+
+/* Zoom-out Animation */
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+

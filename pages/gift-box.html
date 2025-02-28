@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift</title>
+    <link rel="stylesheet" href="/css/gift.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="/assets/audio/hindi.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Background Fireworks Video -->
+    <video autoplay muted id="bgVideo">
+        <source src="/assets/videos/love.mp4" type="video/mp4">
+    </video>
+    <audio id="netflixSound" src="assets/audio/hindi.mp3"></audio>
+
+    <!-- Second Background Video (Initially Hidden) -->
+    <video id="secondVideo" class="hidden">
+        <source src="/assets/videos/fire.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="gift-box" id="giftBox">
+            <div class="lid"></div>
+            <div class="box"></div>
+            <div class="ribbon"></div>
+        </div>
+
+        <!-- Hidden Message -->
+        <div class="message hidden" id="message">
+            <h2 class="bounce">Happy Birthday, Srujan! 🎉❤️</h2>
+            <p>You are the best thing that ever happened to me!</p>
+            <button id="nextBtn">Make it even better!</button>
+        </div>
+    </div>
+
+    <script src="/js/gift.js"></script>
+</body>
+</html>
