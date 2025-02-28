@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById("proceedBtn").addEventListener("click", () => {
     let enteredDOB = document.getElementById("dobInput").value;
-    let correctDOB = "00"; // Set your actual DOB (DDMMYYYY)
+    let correctDOB = "01032004"; // Set your actual DOB (DDMMYYYY)
 
     if (enteredDOB === correctDOB) {
         window.location.href = "gift-box.html"; // Go to last page
